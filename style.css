@@ -338,3 +338,18 @@ footer {
     display: none !important;
   }
 }
+/* =========================
+   DESKTOP: REMOVE TOP TOGGLE
+   ========================= */
+@media (min-width: 769px) {
+
+  /* Hide mobile navigation completely */
+  .mobile-nav {
+    display: none !important;
+  }
+
+  /* Hide hamburger icon if exists */
+  .mobile-menu-btn {
+    display: none !important;
+  }
+}
