@@ -219,3 +219,44 @@ footer {
     font-size: 0.85rem;
   }
 }
+/* =====================
+   FIX NAV VISIBILITY
+   ===================== */
+
+.nav {
+  position: relative;
+  z-index: 10;
+}
+
+.nav-links a {
+  color: #ffffff;
+  font-size: 1rem;
+}
+
+/* Desktop */
+@media (min-width: 769px) {
+  .nav-links {
+    display: flex !important;
+    justify-content: center;
+    margin-top: 10px;
+  }
+
+  .menu-toggle {
+    display: none;
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .menu-toggle {
+    color: #ffffff;
+  }
+
+  .nav-links {
+    background: rgba(0, 0, 0, 0.85);
+  }
+
+  .nav-links a {
+    padding: 10px 0;
+  }
+}
