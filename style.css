@@ -316,3 +316,15 @@ footer {
     display: block;
   }
 }
+/* =========================
+   MOBILE: HIDE OLD MENU
+   ========================= */
+@media (max-width: 768px) {
+
+  /* Hide old text menu links */
+  .nav-links,
+  .top-links,
+  .desktop-menu {
+    display: none !important;
+  }
+}
