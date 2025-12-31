@@ -8,3 +8,8 @@ const nav = document.getElementById("navLinks");
 toggle.addEventListener("click", () => {
   nav.classList.toggle("show");
 });
+
+function toggleMobileMenu() {
+  document.getElementById("mobileMenu").classList.toggle("show");
+}
+
