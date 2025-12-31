@@ -82,3 +82,55 @@ footer {
   height: 280px;
   object-fit: cover;
 }
+/* =========================
+   MOBILE UI IMPROVEMENTS
+   ========================= */
+
+@media (max-width: 768px) {
+
+  /* Header text */
+  .header h1 {
+    font-size: 2.1rem;
+  }
+
+  .header p {
+    font-size: 1rem;
+    padding: 0 10px;
+  }
+
+  /* Sections spacing */
+  .section {
+    padding: 35px 15px;
+  }
+
+  /* Buttons */
+  .btn {
+    padding: 12px 20px;
+    font-size: 0.95rem;
+  }
+
+  /* Video iframe */
+  iframe {
+    height: 220px;
+    border-radius: 10px;
+  }
+
+  /* Shorts layout */
+  .shorts-container {
+    justify-content: flex-start;
+  }
+
+  .short-card {
+    min-width: 140px;
+    max-width: 140px;
+  }
+
+  .short-card img {
+    height: 240px;
+  }
+
+  /* Footer text */
+  footer {
+    font-size: 0.85rem;
+  }
+}
