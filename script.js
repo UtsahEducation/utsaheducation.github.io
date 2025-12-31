@@ -1,15 +1,10 @@
-<script>
-  const hamburger = document.getElementById("hamburger");
-  const mobileMenu = document.getElementById("mobileMenu");
+// Update year
+document.getElementById("year").textContent = new Date().getFullYear();
 
-  hamburger.addEventListener("click", () => {
-    mobileMenu.classList.toggle("active");
-  });
+// Mobile menu toggle
+const toggle = document.getElementById("menuToggle");
+const nav = document.getElementById("navLinks");
 
-  // Close menu when link clicked
-  mobileMenu.querySelectorAll("a").forEach(link => {
-    link.addEventListener("click", () => {
-      mobileMenu.classList.remove("active");
-    });
-  });
-</script>
+toggle.addEventListener("click", () => {
+  nav.classList.toggle("show");
+});
