@@ -59,3 +59,26 @@ footer {
   text-align: center;
   padding: 15px;
 }
+/* Shorts Section */
+.shorts-container {
+  display: flex;
+  gap: 15px;
+  overflow-x: auto;
+  padding: 20px 10px;
+  justify-content: center;
+}
+
+.short-card {
+  min-width: 160px;
+  max-width: 160px;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.25);
+  background: #000;
+}
+
+.short-card img {
+  width: 100%;
+  height: 280px;
+  object-fit: cover;
+}
