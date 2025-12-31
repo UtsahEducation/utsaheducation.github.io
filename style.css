@@ -259,3 +259,60 @@ footer {
   color: #fff;
   cursor: pointer;
 }
+/* =========================
+   MOBILE NAVIGATION ONLY
+   ========================= */
+@media (max-width: 768px) {
+
+  /* Hide desktop menu pills on mobile */
+  .nav-links {
+    display: none !important;
+  }
+
+  .mobile-nav {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    z-index: 1000;
+  }
+
+  .mobile-menu-btn {
+    font-size: 26px;
+    color: #ffffff;
+    cursor: pointer;
+    background: rgba(0,0,0,0.4);
+    padding: 6px 12px;
+    border-radius: 8px;
+  }
+
+  .mobile-menu {
+    display: none;
+    margin-top: 10px;
+    background: rgba(0,0,0,0.9);
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+  }
+
+  .mobile-menu a {
+    display: block;
+    padding: 12px 18px;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 600;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+  }
+
+  .mobile-menu a:last-child {
+    border-bottom: none;
+  }
+
+  .mobile-menu a:hover {
+    background: #ff8c00;
+    color: #000;
+  }
+
+  .mobile-menu.show {
+    display: block;
+  }
+}
