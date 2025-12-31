@@ -73,13 +73,23 @@ footer {
   padding: 15px;
 }
 /* Shorts Section */
+/* =========================
+   FIX SHORTS MOBILE ISSUE
+   ========================= */
 .shorts-container {
   display: flex;
   gap: 15px;
   overflow-x: auto;
-  padding: 20px 20px;
-  justify-content: center;
+  padding: 20px 20px; /* left-right space बढ़ाया */
+  justify-content: flex-start; /* IMPORTANT */
+  scroll-snap-type: x mandatory;
 }
+
+.short-card {
+  flex: 0 0 auto; /* shrink होने से रोके */
+  scroll-snap-align: start;
+}
+
 
 .short-card {
   min-width: 160px;
