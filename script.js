@@ -1,11 +1,15 @@
-// Update year
-document.getElementById("year").textContent = new Date().getFullYear();
+<script>
+  const hamburger = document.getElementById("hamburger");
+  const mobileMenu = document.getElementById("mobileMenu");
 
-// Mobile menu toggle
-const toggle = document.getElementById("menuToggle");
-const nav = document.getElementById("navLinks");
+  hamburger.addEventListener("click", () => {
+    mobileMenu.classList.toggle("active");
+  });
 
-toggle.addEventListener("click", () => {
-  nav.classList.toggle("show");
-});
-
+  // Close menu when link clicked
+  mobileMenu.querySelectorAll("a").forEach(link => {
+    link.addEventListener("click", () => {
+      mobileMenu.classList.remove("active");
+    });
+  });
+</script>
