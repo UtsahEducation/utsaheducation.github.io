@@ -163,30 +163,18 @@
 
     <!-- Razorpay Button (SAFE) -->
     <div class="razorpay-btn-wrapper">
-      <button id="buyNowBtn" style="
-  background:#000;
-  color:#fff;
-  padding:14px 38px;
-  border-radius:12px;
-  font-size:1.1rem;
-  font-weight:600;
-  border:none;
-  cursor:pointer;
-">
-  Buy Now
-</button>
+      <form>
+        <script
+          src="https://checkout.razorpay.com/v1/payment-button.js"
+          data-payment_button_id="pl_RzntlRfciBZldH"
+          async>
+        </script>
+      </form>
+    </div>
 
-<script src="https://checkout.razorpay.com/v1/payment-button.js"
-        data-payment_button_id="pl_RzntlRfciBZldH"
-        async>
-</script>
+    <small class="secure">🔒 Secure payment via Razorpay</small>
 
-
-  <small class="secure">🔒 Secure payment via Razorpay</small>
-
-</div>
-
-</div>
+  </div>
 </section>
 
 
@@ -204,6 +192,5 @@
   <script src="script.js"></script>
 </body>
 </html>
-
 
 
