@@ -163,23 +163,24 @@
 
     <!-- Razorpay Button (SAFE) -->
     <div class="razorpay-btn-wrapper">
-      <a
-    href="https://rzp.io/i/pl_RzntlRfciBZldH"
-    target="_blank"
-    style="
-      display:inline-block;
-      background:#000;
-      color:#fff;
-      padding:14px 38px;
-      border-radius:12px;
-      font-size:1.1rem;
-      font-weight:600;
-      text-decoration:none;
-      margin-top:12px;
-    "
-  >
-    Buy Now
-  </a>
+      <button id="buyNowBtn" style="
+  background:#000;
+  color:#fff;
+  padding:14px 38px;
+  border-radius:12px;
+  font-size:1.1rem;
+  font-weight:600;
+  border:none;
+  cursor:pointer;
+">
+  Buy Now
+</button>
+
+<script src="https://checkout.razorpay.com/v1/payment-button.js"
+        data-payment_button_id="pl_RzntlRfciBZldH"
+        async>
+</script>
+
 
   <small class="secure">🔒 Secure payment via Razorpay</small>
 
