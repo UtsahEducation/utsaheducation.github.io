@@ -437,6 +437,7 @@ footer {
 }
 
 .razorpay-payment-button {
+ background: #ff8c00 !important;
   color: #ffffff !important;
   border-radius: 25px !important;
   padding: 12px 28px !important;
@@ -447,5 +448,12 @@ footer {
 .product-card form {
   display: flex;
   justify-content: center;
+}
+
+/* Remove any background around Razorpay button */
+.product-card form {
+  background: transparent;
+  padding: 0;
+  margin: 16px 0 0;
 }
 
