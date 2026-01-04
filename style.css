@@ -372,9 +372,13 @@ footer {
 }
 
 .product-img {
-  width: 260px;
+  width: 100%;
+  max-width: 280px;   /* increase size */
+  height: auto;       /* keep correct ratio */
+  object-fit: contain;
   margin-bottom: 15px;
 }
+
 
 .product-card h3 {
   font-size: 1.3rem;
