@@ -357,31 +357,45 @@ footer {
 .buy-section {
   display: flex;
   justify-content: center;
-  padding: 40px 20px;
-  background: #f7f7f7;
+  padding: 60px 20px;
+   background: #f6f6f6;
 }
 
 
 .product-img {
   width: 100%;
-  max-width: 280px;   /* increase size */
-  height: auto;       /* keep correct ratio */
-  object-fit: contain;
-  margin-bottom: 15px;
+  max-width: 260px;
+  height: auto;
+  border-radius: 12px;
+  margin-bottom: 18px;
 }
 
+
+
+.product-card {
+  background: #ffffff;
+  border-radius: 18px;
+  padding: 28px 25px 30px;
+  max-width: 340px;
+  width: 100%;
+  text-align: center;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.15);
+}
 
 .product-card h3 {
-  font-size: 1.3rem;
-  margin-bottom: 8px;
+  font-size: 1.25rem;
+  margin-bottom: 12px;
+  line-height: 1.35;
 }
 
+
 .price {
-  font-size: 1.4rem;
+  font-size: 1.6rem;
   font-weight: bold;
   color: #ff8c00;
   margin-bottom: 15px;
 }
+
 
 .buy-btn {
   display: inline-block;
@@ -401,22 +415,24 @@ footer {
 .secure {
   display: block;
   margin-top: 10px;
-  font-size: 0.8rem;
-  color: #666;
+  font-size: 0.85rem;
+  color: #555;
 }
+
 
 
 
 .razorpay-btn-wrapper {
-  margin-top: 15px;
+  margin-top: 10px;
 }
 
 .razorpay-payment-button {
   background: #ff8c00 !important;
-  color: #fff !important;
+  color: #ffffff !important;
   border-radius: 25px !important;
   padding: 12px 28px !important;
   font-size: 16px !important;
+  font-weight: bold !important;
   cursor: pointer !important;
 }
 
