@@ -355,46 +355,55 @@ footer {
 }
 /* razorpay */
 .buy-section {
+  background: #f6f7f9;   /* light professional background */
+  padding: 60px 20px;
   display: flex;
   justify-content: center;
-  padding: 60px 20px;
-   background: #f6f6f6;
 }
+
 
 
 .product-img {
   width: 100%;
   max-width: 260px;
   height: auto;
-  border-radius: 12px;
-  margin-bottom: 18px;
+  margin: 0 auto 18px;
+  display: block;
+  border-radius: 10px;
 }
+
 
 
 
 .product-card {
   background: #ffffff;
   border-radius: 18px;
-  padding: 28px 25px 30px;
-  max-width: 340px;
+  padding: 28px 24px;
+  max-width: 360px;
   width: 100%;
   text-align: center;
-  box-shadow: 0 12px 30px rgba(0,0,0,0.15);
+
+  box-shadow: 0 12px 30px rgba(0,0,0,0.12);
 }
+
 
 .product-card h3 {
   font-size: 1.25rem;
-  margin-bottom: 12px;
-  line-height: 1.35;
+  line-height: 1.4;
+  margin: 0 0 12px;
+  color: #222;
+  text-align: center;
 }
 
 
 .price {
-  font-size: 1.6rem;
+  font-size: 1.4rem;
   font-weight: bold;
   color: #ff8c00;
-  margin-bottom: 15px;
+  margin-bottom: 14px;
+  text-align: center;
 }
+
 
 
 .buy-btn {
@@ -416,7 +425,8 @@ footer {
   display: block;
   margin-top: 10px;
   font-size: 0.85rem;
-  color: #555;
+  color: #666;
+  text-align: center;
 }
 
 
@@ -434,5 +444,9 @@ footer {
   font-size: 16px !important;
   font-weight: bold !important;
   cursor: pointer !important;
+}
+.product-card form {
+  display: flex;
+  justify-content: center;
 }
 
